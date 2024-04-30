@@ -1,0 +1,391 @@
+body {
+  background-color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.container {
+  margin-top: 1rem 0;
+  padding: 1rem 0 0 0;
+  height: 800px;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+
+.box {
+  text-shadow: 0px 0px 5px #000000, 0 0 5px #fff ;
+  font-size: 10rem;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f169;
+  backdrop-filter: blur(1px);
+  border-radius: 10%;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, .5);  
+  color: black;  
+  margin-bottom: 0;
+  transition: .3s ease;
+  /* border: 1px solid red; */
+}
+
+.btn {
+  width: 230px;
+  padding:.5rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ffffff69;
+  transition: .3s ease;
+  border: none;
+  color: blue;
+}
+
+.r {
+  color: red;
+}
+.b {
+  color: blue;
+}
+
+.box:hover {
+  background-color: #ffffff69;
+  color: #ffd711;
+}
+
+.btn:hover {
+  letter-spacing: 5px;
+  color:red;
+  background-color: rgba(241, 241, 241, 0.411);
+  backdrop-filter: blur(1px);
+}
+
+.space {
+  height: 100px;
+}
+
+#msg {
+  font-size: 7rem;
+  color: #ffd711;
+  text-transform: uppercase;
+}
+
+.msg-container {
+  margin: 260px 0;
+  height: 40vh;
+  /* border: 2px solid red; */
+}
+
+.disabled {
+  pointer-events: none; /* Disable pointer events */
+  opacity: 0.5; /* Optionally reduce opacity to visually indicate it's disabled */
+  /* Add any other styling to visually indicate the box is disabled */
+}
+
+.margin {
+  margin-top: 0;
+}
+
+.bwidth {
+  width: 180px;
+}
+
+@media (min-width: 390px){
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .container {
+    margin-top: 1rem;
+    padding: 1rem 0 0 0;
+    height: 290px;
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+  }
+  
+  .box {
+    text-shadow: 0px 0px 5px #000000, 0 0 5px #fff ;
+    font-size: 4rem;
+    height: 90px;
+    width: 90px;  
+    margin-bottom: 0;
+    transition: .3s ease;
+    /* border: 1px solid red; */
+  }
+  
+  .btn {
+    width: 100px;
+    padding:.5rem 1rem;
+    font-size: .7rem;
+    border-radius: 1rem;
+  }
+  
+  .box:hover {
+    background-color: #ffffff69;
+    color: #ffd711;
+  }
+  
+  .btn:hover {
+    letter-spacing: 2px;
+    background-color: rgba(241, 241, 241, 0.411);
+    backdrop-filter: blur(1px);
+  }
+  
+  #msg {
+    font-size: 2.5rem;
+    color: #ffd711;
+    text-transform: uppercase;
+  }
+  
+  .msg-container {
+    margin: 260px 0;
+    height: 40vh;
+    /* border: 2px solid red; */
+  }
+  
+  .bwidth {
+    width: 70px;
+  }
+}
+
+@media (min-width: 475px) {
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .container {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0 0 0;
+    height: 400px;
+    width: 400px;
+    border: 1px solid red;
+  }
+
+  .box {
+    text-shadow: 0px 0px 5px #000000, 0 0 5px #fff ;
+    font-size: 7rem;
+    height: 120px;
+    width: 120px;
+    /* border: 1px solid red; */
+  }
+
+  #msg {
+    font-size: 3rem;
+    color: #ffd711;
+    text-transform: uppercase;
+  }
+  
+  .msg-container {
+    margin: 260px 0;
+    height: 40vh;
+    /* border: 2px solid red; */
+  }
+
+  .btn {
+    width: 180px;
+    padding:.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+  }
+
+  .bwidth {
+    width: 100px;
+  }
+
+  .btn:hover {
+    letter-spacing: 2px;
+    color:red;
+    background-color: rgba(241, 241, 241, 0.411);
+    backdrop-filter: blur(1px);
+  }
+}
+
+@media (min-width: 640px) {
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .container {
+    margin-top: 1rem 0;
+    padding: 1rem 0 0 0;
+    height: 500px;
+    width: 500px;
+    /* border: 1px solid red; */
+  }
+  
+  .box {
+    text-shadow: 0px 0px 5px #000000, 0 0 5px #fff ;
+    font-size: 8rem;
+    height: 150px;
+    width: 150px;
+    /* border: 1px solid red; */
+  }
+  
+  .btn {
+    width: 200px;
+    padding:.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .bwidth{
+    width: 150px;
+  }
+  
+  .box:hover {
+    background-color: #ffffff69;
+    color: #ffd711;
+  }
+  
+  .btn:hover {
+    letter-spacing: 3px;
+    color:red;
+    background-color: rgba(241, 241, 241, 0.411);
+    backdrop-filter: blur(1px);
+  }
+  
+  #msg {
+    font-size: 5rem;
+    color: #ffd711;
+    text-transform: uppercase;
+  }
+  
+}
+
+@media (min-width: 780px) {
+  main {
+    gap: 2rem;
+  }
+  
+  .container {
+    margin-top: 1rem 0;
+    padding: 1rem 0 0 0;
+    height: 600px;
+    width: 600px;
+    /* border: 1px solid red; */
+  }
+  
+  .box {
+    text-shadow: 0px 0px 5px #000000, 0 0 5px #fff ;
+    font-size: 10rem;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f169;
+    backdrop-filter: blur(1px);
+    border-radius: 10%;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, .5);  
+    color: black;  
+    margin-bottom: 0;
+    transition: .3s ease;
+    /* border: 1px solid red; */
+  }
+  
+  .btn {
+    width: 200px;
+    padding:.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .box:hover {
+    background-color: #ffffff69;
+    color: #ffd711;
+  }
+  
+  .btn:hover {
+    letter-spacing: 4px;
+    color:red;
+    background-color: rgba(241, 241, 241, 0.411);
+    backdrop-filter: blur(1px);
+  }
+  
+  #msg {
+    font-size: 6rem;
+    color: #ffd711;
+    text-transform: uppercase;
+  }
+  
+  .msg-container {
+    margin: 260px 0;
+    height: 40vh;
+    /* border: 2px solid red; */
+  }
+  
+  .bwidth {
+    width: 150px;
+  }
+
+}
+
